@@ -8,19 +8,20 @@ function getComputerChoice() {
 
 function compare(computerChoice, playerChoice) {
     if (computerChoice === playerChoice) {
-        alert ("You Tie!");
+        document.getElementById("result").innerHTML = "You Tie!";
         // Player Win Statements
-    } else if ((computerChoice === "Scissors" && playerChoice === "Rock") || (computerChoice === "Paper" && playerChoice === "Scissors") || (computerChoice === "Paper" && playerChoice === "Rock")) {
-        alert ("You Win!")
+    } else if ((computerChoice === "Scissors" && playerChoice === "Rock") || (computerChoice === "Paper" && playerChoice === "Scissors") || (computerChoice === "Rock" && playerChoice === "Paper")) {
+        document.getElementById("result").innerHTML = "You Win!";
         // Player Lose Statements
     } else if ((computerChoice === "Scissors" && playerChoice === "Paper") || (computerChoice === "Paper" && playerChoice === "Rock") || (computerChoice === "Rock" && playerChoice === "Scissors")) {
-        alert ("You Lose!")
+        document.getElementById("result").innerHTML = "You Lose!";
     }
 }
 
 function playRound(playerInput) {
     console.log(playerInput);
     var computerInput = getComputerChoice();
+    document.getElementById("computer-output").innerHTML = `Computer chose ${computerInput}`;
     compare(computerInput, playerInput);
 }
 

@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <script src="rps.js"></script>
-    
-    <button type = "button" onclick = "playRound('Rock');" id = "Rock" value = "Rock">Rock</button>
-    <button type = "button" onclick = "playRound('Paper');" id = "Paper" value = "Paper">Paper</button>
-    <button type = "button" onclick = "playRound('Scissors');" id = "Scissors" value = "Scissors">Scissors</button>
 
+    <div class = "title-container"> 
+        <div class="title">ROCK PAPER SCISSORS</div>
+     </div>
+
+     <div class="button-container">
+        <div class="buttons">
+            <button type = "button" onclick = "playRound('Rock');" id = "Rock" value = "Rock">Rock</button>
+            <button type = "button" onclick = "playRound('Paper');" id = "Paper" value = "Paper">Paper</button>
+            <button type = "button" onclick = "playRound('Scissors');" id = "Scissors" value = "Scissors">Scissors</button>
+        </div>
+        </div>
+
+        <div class="computer-choice-container">
+            <div class="computer-choice" id="computer-output"></div>
+        </div>
+
+    <div class="result-container">
+        <div class="result" id="result"> </div>
+    </div>
 
 </body>
 </html>
