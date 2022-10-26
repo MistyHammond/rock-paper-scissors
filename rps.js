@@ -10,7 +10,7 @@ function compare(computerChoice, playerChoice) {
     if (computerChoice === playerChoice) {
         alert ("You Tie!");
         // Player Win Statements
-    } else if ((computerChoice === "Scissors" && playerChoice === "Rock") || (computerChoice === "Paper" && playerChoice === "Scissors") || (computerChoice === "Paper" && playerChoice === "Scissors")) {
+    } else if ((computerChoice === "Scissors" && playerChoice === "Rock") || (computerChoice === "Paper" && playerChoice === "Scissors") || (computerChoice === "Paper" && playerChoice === "Rock")) {
         alert ("You Win!")
         // Player Lose Statements
     } else if ((computerChoice === "Scissors" && playerChoice === "Paper") || (computerChoice === "Paper" && playerChoice === "Rock") || (computerChoice === "Rock" && playerChoice === "Scissors")) {
@@ -18,9 +18,17 @@ function compare(computerChoice, playerChoice) {
     }
 }
 
+function playRound(playerInput) {
+    console.log(playerInput);
+    var computerInput = getComputerChoice();
+    compare(computerInput, playerInput);
+}
+
+/*
 function playRound() {
     var playerInput = document.getElementById("playerInput").value;
     console.log(playerInput);
     var computerInput = getComputerChoice();
     compare(computerInput, playerInput);
 }
+*/
