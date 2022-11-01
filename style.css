@@ -28,7 +28,7 @@
 
  .buttons {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 450px;
 
  }
@@ -74,7 +74,7 @@
     background: #E78F8E;
     color: white;
     cursor: pointer;
-    
+    width: 110px;
  }
 
  button:hover {
@@ -87,5 +87,12 @@
     box-shadow: 0 5px #666;
     transform: translateY(4px);
     color: white;
+ }
+
+ button:focus {
+   background-color: #564256;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+   color: white;
  }
  
