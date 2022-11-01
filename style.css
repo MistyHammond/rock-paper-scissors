@@ -63,6 +63,45 @@
 
  }
 
+ .score-board-container {
+   display: flex;
+   justify-content: center;
+   padding-top: 50px;
+ }
+
+ .score-board {
+   display: flex;
+   justify-content: center;
+   width: 900px;
+ }
+
+ .score-board-scores {
+   display: flex;
+   justify-content: space-around;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: large;
+   width: 450px;
+ }
+
+ .new-round-container {
+   display:flex;
+   justify-content: center;
+   padding-top: 50px;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .new-round-button {
+   display: flex;
+ }
+
+ .play-again {
+   display: flex;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: large;
+   padding-bottom: 10px;
+ }
+
  button {
     display: block;
     font-size: large;
